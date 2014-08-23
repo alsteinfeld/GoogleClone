@@ -1,0 +1,255 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	font-family: arial, sans-serif;
+	font-size: 13px;
+	color: #404040;
+}
+
+a:link {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:visited {
+	text-decoration: none;
+	color: #404040;
+}
+
+div {
+	position: relative;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Nav to-do: sign in button bold font */
+
+header {
+	position: relative;
+}
+
+/* Question: why in this case, if I set the position to relative with a right: 0, the nav block doesn't float right; */
+
+nav {
+	position: absolute;
+	right: 0;
+}
+
+nav ul {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right:12px;
+}
+
+nav ul li {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 24px;
+	top: 10px;
+	margin-right: 10px;
+}
+
+nav ul li form input {
+	background: -webkit-linear-gradient(top, #4387fd,#4683ea);
+	background: -o-linear-gradient(top, #4387fd,#4683ea);
+	background: linear-gradient(top, #4387fd,#4683ea);
+	min-height: 20px:;
+	min-width: 20px;
+	padding: 8px 14px;
+	font-weight: bold;
+	outline: none;
+	border: 1px solid #4285f4;
+	border-radius: 2px;
+	color: #fff;
+	font: 13px;
+}
+
+nav ul li img {
+	width: 70%;
+	height: 70%;
+	display: inherit;
+	vertical-align: middle;
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	height: 40px;
+	border-top: 1px solid #e4e4e4;
+	background: -webkit-linear-gradient(top, #f5f5f5, #f1f1f1);
+	background: -o-linear-gradient(top, #f5f5f5,#f1f1f1);
+	background: linear-gradient(top, #f5f5f5, #f1f1f1);
+}
+
+/* Best way to position the microphone image? It's a .png so why isn't it transparent over the input borders? How important is setting minwidth in the circumstances? */
+
+.logo {
+	position: relative;
+	top: 190px;
+	width: 300px;
+	height: 240px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.search {
+	position: relative;
+	height: 20px;
+	width: 523px;
+	margin-top: 60px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.search form {
+	position: relative;
+}
+
+.search img {
+	position: absolute;
+	left: 500px;
+	bottom: 1px;
+	background: transparent;
+	height: 25px;
+	width: 25px;
+	display: inline-block;
+}
+
+.searchbox {
+	border-radius: 2px;
+	border: 1px solid #dcdcdc;
+	height: 25px;
+	width: 523px;
+}
+
+.searchbox:hover {
+	border: 1px solid black;
+}
+
+.button {
+	position: relative;
+	display: inline-block;
+	vertical-align: baseline;
+	height: 100%;
+	border: 1px solid #dcdcdc;
+	border-radius: 2px;
+	background: -webkit-linear-gradient(top, #f5f5f5, #f1f1f1);
+	background: -o-linear-gradient(top, #f5f5f5,#f1f1f1);
+	background: linear-gradient(top, #f5f5f5, #f1f1f1);
+	margin: 16px 8px;
+	left: 130px;
+	color: #444;
+	font-weight: bold; 
+	font-size: 11px;
+	padding: 8px 8px
+}
+
+.button:hover {
+	-moz-box-shadow: 0 0 2px #ccc;
+	-webkit-box-shadow: 0 0 2px #ccc;
+	box-shadow: 00 2px #ccc;
+	border: 1px solid #444;
+}
+
+/* How do I auto-space the inline blocks between the footer? Do I really have use a margin here?*/
+
+.links {
+	position: relative;
+	float: left;
+	height: 100%;
+}
+
+.links li {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 30px;
+	margin-top: 12px;
+	color: #666;
+}
+
+.settings {
+	position: relative;
+	float: right;
+	height: 100%;
+}
+
+.settings li {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 30px;
+	margin-top: 12px;
+	color: #666;
+}
+
+/* Why is it telling me to not use IDs in selectors? When is the right time to use them?*/
+
+#google {
+	height: 95px;
+	width: 269px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
